@@ -1,0 +1,80 @@
+﻿@charset "utf-8";
+*{margin:0; padding:0;}
+li {list-style:none; }
+a {text-decoration:none; color:#000;}
+body {background:#ddf8ff; width:100%; height:100%; font-family:Bangers, Mapo당인리발전소; text-indent:0;position:relative;}
+.hover {transition:all 0.5s; text-shadow:3px 3px 3px #ffe6fd; }/*addClass*/
+
+#wrap { width:1200px; height:2200px; margin:0px auto; }
+/*팝업*/
+#pop { width:536px; height:439px; background:#ffe6fd url("../img/cloud1.png") no-repeat 0 0/cover; border:2px solid #ffe6fd; box-shadow:2px 2px 2px #ddf8ff; position:absolute; left:50%; top:20%; margin-left:-268px; margin-top:-220px; z-index:1000;}
+	#pop h2 { display:inline-block; width:500px; height:100px;background:url(../img/pop.png) no-repeat 0 0/50% 100%; margin-left:145px;}
+	#pop p { font-size:35px; text-align:center; margin:50px 0; }
+		#pop p a { background-color:#ddf8ff; font-size:20px; }
+	#pop span { float:right; font-size:15px; margin-right:5px; padding:10px; background-color:#ddf8ff; cursor:pointer; }
+/*백그라운드 구름*/
+#wrap>img:nth-child(1) {position:fixed; top:0px; left:-1146px; animation:ani1 110s linear infinite; opacity:1; z-index:-9999;} /*1146*543*/
+#wrap>img:nth-child(2){position:fixed; top:20px; left:0px; animation:ani2 100s linear infinite; opacity:1; z-index:-9999;}/*1841*455*/
+
+@keyframes ani1 {
+	0%{left:-1146px;}
+	100%{left:1950px;}
+}
+
+@keyframes ani2{
+	0% {left:0px;}
+	50% {left:1950px; opacity:0;}
+	50.001% {left:-1840px; opacity:0.8;}
+	100% {left:0px;}
+}
+/*header*/
+#header {height:100px; margin:10px 115px 0 110px; position:relative;}
+#logo1 {display:inline-block; background:url("../img/logo.png") no-repeat 0px -20px/cover; width:150px; height:60px; margin-top:10px;}
+
+#mainBack { position:absolute; right:0px; top:70px; background:rgba(181,181,181,0.2); width:605px; height:150px; z-index:10; display:none; }
+
+#main { position:absolute; top:30px; right:0px; width:605px; height:30px; }
+	#main>li { float:left; position:relative; }
+	#main>li a { display:block; width:88px; text-align:center; height:50px; line-height:50px; font-size:23.85px; color:#b4b4b4;}
+	#main>li:nth-of-type(2) a{width:70px;}
+	#main>li:nth-of-type(5) a{width:120px;}
+	#main>li:nth-of-type(6) a{width:60px;}
+	#main>li ul { position:absolute; left:0; top:50px; z-index:500; display:none;}	
+	#main>li ul a {color:#878686; z-index:14; font-size:14pt; height:20px; line-height:20px;}
+	
+/*container*/
+#container {margin:0 115px 60px 110px; height:1910px;position:relative;}
+/*이미지 슬라이드*/
+#imgslide { position:relative; width:975px; height:250px; overflow:hidden;}
+#imgslide img {position:absolute; top:0;}
+/*하단 이미지 영역*/
+#dimg {height:1660px;}
+#dimg p {display:inline-block; width:345px; height:59.5px; margin-top:-29px; margin-left:82px; transform:skewX(-70deg); background:#bebcbe; font-size:60px; text-align:center;}
+#dimg li:nth-of-type(2) p, #dimg li:nth-of-type(4) p, #dimg li:last-child p{float:right; transform:skewX(70deg); margin-top:95px; margin-right:-80px;}
+
+#dimg li a{ display:block; background:url("../img/doorall.PNG") no-repeat left bottom; width:165px; height:345px; margin-top:160px; transform:skewY(-20deg); }
+#dimg li span {position:relative; top:70px; left:60px; font-size:34.97px; color:#518a54; }
+#dimg li:first-child a{margin-top:40px;}
+#dimg li:nth-of-type(2) a,#dimg li:nth-of-type(4) a,#dimg li:last-child a {display:block; background:url("../img/doorall2.png") no-repeat right bottom; float:right; margin-top:-220px; transform:skewY(20deg);}
+/*hover시 나타나는 글짜*/
+#ho {}
+#ho li {position:absolute; font-size:78px; color:#878686; display:none;}
+#ho li:first-child {top:595px; left:200px; transform:skewX(-55deg);}
+#ho li:nth-of-type(2) {top:753px; left:660px; transform:skewX(55deg);}
+#ho li:nth-of-type(3) {top:1133px; left:200px; transform:skewX(-55deg);}
+#ho li:nth-of-type(4) {top:1291px; left:660px; transform:skewX(55deg);}
+#ho li:nth-of-type(5) {top:1670.5px; left:200px; transform:skewX(-55deg);}
+#ho li:last-child {top:1830px; left:660px; transform:skewX(55deg);}
+
+/*footer*/
+#footer {height:120px; background:#ffe6fd; padding: 10px 40px 0 60px; }
+#logo2 {display:block; background:url("../img/logo.png") no-repeat 0px -20px/cover; width:190px; height:80px; float:left;}
+.foot {display:inline-block; float:right;}
+.foot li{display:inline-block; font-size:20px; }
+.foot li:first-child {border:3px solid #000; width:25px; height:105px; float:left; padding-left:12px; padding-top:5px; line-height:1;}
+.foot p {font-size:15px; font-family:"Mapo당인리발전소"}
+.foot li:nth-of-type(2) {width:200px; margin:10px 100px 0 20px; text-align:center; float:left;}
+.foot li:nth-of-type(3) {width:140px; height:40px; border:3px solid #000;text-align:center; line-height:40px; float:left; margin:30px 50px 0 0; }
+.foot li:last-child { width:95px; height:40px; border:3px solid #000; float:left; text-align:center; line-height:40px; margin-top:30px;}
+	
+
