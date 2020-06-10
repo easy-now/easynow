@@ -41,7 +41,7 @@ $("#dimg li a").mouseenter(function(){
 			width:285,
 			height:380,
 			"margin-top":"134px",
-			backgroundImage:"url('img/doorall.PNG')",
+			backgroundImage:"url('img/doorall.png')",
 			backgroundPosition:"left top",
 			transform:"skewY(-20deg)",
 		});
@@ -66,7 +66,7 @@ $("#dimg li a").mouseenter(function(){
 			width:165,
 			height:345,
 			"margin-top":160,
-			backgroundImage:"url('img/doorall.PNG')",
+			backgroundImage:"url('img/doorall.png')",
 			backgroundPosition:"left bottom",
 			transform:"skewY(-20deg)",
 		});

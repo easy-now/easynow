@@ -52,7 +52,7 @@ body {background:#ddf8ff; width:100%; height:100%; font-family:Bangers, Mapoë‹¹ì
 #dimg p {display:inline-block; width:345px; height:59.5px; margin-top:-29px; margin-left:82px; transform:skewX(-70deg); background:#bebcbe; font-size:60px; text-align:center;}
 #dimg li:nth-of-type(2) p, #dimg li:nth-of-type(4) p, #dimg li:last-child p{float:right; transform:skewX(70deg); margin-top:95px; margin-right:-80px;}
 
-#dimg li a{ display:block; background:url("../img/doorall.PNG") no-repeat left bottom; width:165px; height:345px; margin-top:160px; transform:skewY(-20deg); }
+#dimg li a{ display:block; background:url("../img/doorall.png") no-repeat left bottom; width:165px; height:345px; margin-top:160px; transform:skewY(-20deg); }
 #dimg li span {position:relative; top:70px; left:60px; font-size:34.97px; color:#518a54; }
 #dimg li:first-child a{margin-top:40px;}
 #dimg li:nth-of-type(2) a,#dimg li:nth-of-type(4) a,#dimg li:last-child a {display:block; background:url("../img/doorall2.png") no-repeat right bottom; float:right; margin-top:-220px; transform:skewY(20deg);}
