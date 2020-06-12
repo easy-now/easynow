@@ -1,119 +1,200 @@
-﻿<!DOCTYPE html >
-<head>
-<title>easy_now's</title>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css" />	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src ="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-</head>
-<body>
-	<div id="wrap">
-	<img src="img/cloud1.png" />
-	<img src="img/cloud2.png" />
-	<div id="pop">
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>오펀:천사의 비밀</title>
+		<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css" />	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src ="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="js/jquery.mousewheel.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/java.js"></script>
+		<script>
+		
+		</script>
+		<body>
+			<div id="wrapper">
+			<div id="pop">
+				<p>에스더를 조심하세요</p>
 				<h2></h2>
-				<p>Welcome!<br>
-				Come in!<br>
-				
-				</p>
-
-				<p><a href="#">[더조은펜션 바로가기]</a></p>
-
+				<p>ORPHAN을 클릭해 비밀을 확인하세요</p>
 				<span>close</span>
 			</div><!-- pop 끝 -->
-		<div id="header">
-			<a id="logo1" href="#"></a>
-			<div id="mainBack"></div>
-			<ul id="main">
-				<li><a href="#">ABOUT</a>
-					<ul class="menu">
-						<li><a href="#">INTRODUCE</a></li>
-						<li><a href="#">PREVIEW</a></li>
+				<div id="header">
+				<nav id="nav">
+					<ul class="menu" >
+						<li><a href="#">메인</a></li>
+						<li><a href="#about">영화소개</a></li>
+						<li><a href="#casting">등장인물</a></li>
+						<li><a href="#gallery">갤러리</a></li>
+						<li><a href="#video">영상보기</a></li>
+						<li><a href="#view">리뷰</a></li>
+						<li><a href="#st">스트리밍</a></li>
 					</ul>
-				</li>
-				<li><a href="#">ROOMS</a>
-					<ul class="menu">
-						<li><a href="#">101</a></li>
-						<li><a href="#">102</a></li>
-						<li><a href="#">201</a></li>
-						<li><a href="#">202</a></li>
-						<li><a href="#">301</a></li>
-						<li><a href="#">302</a></li>
+				</nav>
+				</div>
+				<!--header end-->
+				<div id="container">
+					<div id="one" class="move">
+					<div class="get">
+						<a href="#"><span>orphan</span></a>
+					</div>
+					<div id="about">
+						<h2>쉿! 비밀을 지켜주세요</h2>
+						<p>
+						유산으로 세 번째 아이를 잃고 입양을 선택한 케이트와 존.<br> 
+						방문한 고아원에서 또래보다 차분하고 영민한 아이 에스터에게 이끌려 그를 새로운 가족으로 받아들인다. <br>
+						그러나 날이 갈수록 에스터로부터 이상함을 느끼는 부부.<br> 그런 가운데, 에스터가 이상하다며 찾아왔던 고아원의 원장수녀가 처참하게 숨진 모습으로 발견된다. <br><br>마침내 에스터의 과거를 쫓던 케이트는 생각지도 못했던 충격적인 진실을 알게 되고,<br> 
+						누구도 상상할 수 없는 에스터의 치명적인 비밀은 이제 서서히 가족들을 조여오기 시작한다.</p>
+					</div>
+					</div>
+					<div id="casting" class="move">
+					<h1>등장인물</h1>		
+					<span class="point left">left</span>
+					<span class="point right">right</span>
+					<div class="slide"><!--3개 보일 부분-->
+						<div id="cast">
+					<ul><!--전체 감싸는 부분-->
+						<li class="cast1">
+						<div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+							<p>주연 | 피터 사스가드</p>
+							<h3>존 콜먼</h3>
+							<p>
+								다니엘과 맥스의 아빠.<br>
+								원래 아내와는 사이가 원만했지만<br>
+								에스더를 입양한 뒤부터는 점차 사이가 멀어진다.
+							</p>
+						</li>
+						<li class="cast2">
+						<div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+							<p>주연 | 이사벨 퍼만</p>
+							<h3>에스더</h3>
+							<p>
+								고아원에서 지내던 9살 소녀.<br>
+								다른 아이들과 달리 차분하고 영민한 분위기를 가졌다.<br>
+								목과 손목에는 항상 리본이 둘러져있다.
+							</p>
+						</li>
+						<li class="cast3">
+						<div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+							<p>주연 | 베라 파미가</p>
+							<h3>케이트 콜먼</h3>
+							<p>
+								다니엘과 맥스의 엄마.<br>
+								에스더가 집에온 뒤부터는 <br>
+								온갖 이상한 행동들만 골라서 하는걸 보고는 당황한다.
+							</p>
+						</li>
+						<li class="cast4">
+						<div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+							<p>조연 | CCH 파운더</p>
+							<h3>애비게일 수녀</h3>
+							<p>
+								에스더가 있는 고아원의 담당 수녀<br>
+								에스더의 입양을 주선하지만 에스더가 수상하다며<br>
+								콜먼 부부를 찾아왔다가 처참한 모습으로 춤진 채 발견된다.
+							</p>
+						</li>
+						<li class="cast5">
+						<div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+							<p>조연 | 지미 베넷</p>
+							<h3>다니엘 콜먼</h3>
+							<p>
+								콜먼 부부의 장남. 맥스의 오빠.<br>
+								에스더를 동생으로 여기지 않는다.<br>
+								에스더 역시 다니엘을 피하고 맥스하고만 가까워진다.
+							</p>
+						</li>
+						<li class="cast6">
+						<div></div>  <!-- 제목 아래에 배경으로 들어갈 요소 -->
+							<p>조연 | 아리아나 엔지니어</p>
+							<h3>맥스 콜먼</h3>
+							<p>
+								콜먼 부부의 장녀. 다니엘의 여동생.<br>
+								청각장애인이라 수어를 사용한다.<br>
+								에스더를 금방 친언니처럼 좋아하고 따르기 시작한다.
+							</p>
+						</li>
 					</ul>
-				</li>
-				<li><a href="#">FACILITIES</a>
-					<ul class="menu">
-						<li><a href="#">CAFE</a></li>
-						<li><a href="#">SPA</a></li>
-						<li><a href="#">INFINITY POOL</a></li>
-						<li><a href="#">BARBECUE</a></li>
-					</ul>
-				</li>
-				<li><a href="#">SERVICE</a>
-					<ul class="menu">
-						<li><a href="#">PICK-UP</a></li>
-						<li><a href="#">EVENT</a></li>
-					</ul>
-				</li>
-				<li><a href="#">RESERVATION</a>
-					<ul class="menu">
-						<li><a href="#">RESERVATION</a></li>
-						<li><a href="#">CONFIRM/CANCEL</a></li>
-					</ul>
-				</li>
-				<li><a href="#">MAP</a></li>
-				<li><a href="#">ROG-IN</a>
-					<ul class="menu">
-						<li><a href="#">JOIN</a></li>
-						<li><a href="#">MEMBERSHIP</a></li>
-					</ul>
-				</li>
-
-		</div>
-		<div id="container">
-			<div id="imgslide">
-				<img src="img/slide1.png"alt="이미지 슬라이드 1">
-				<img src="img/slide2.png"alt="이미지 슬라이드 2">
-				<img src="img/slide3.png"alt="이미지 슬라이드 3">
+					</div>
+					</div>					
+					</div>
+					<div id="gallery" class="move">
+						<h1>갤러리</h1>
+						<span class="point left">left</span>
+						<span class="point right">right</span>
+						<div id="slidebox" ><!--2개 보일 부분-->
+							<div id="slide">  <!-- 이미지가 11개 모두 보일부분 -->
+								<ul>
+									<li class="slide10">10</li>
+									<li class="slide11">11</li>
+									<li class="slide1">1</li>
+									<li class="slide2">2</li>
+									<li class="slide3">3</li>
+									<li class="slide4">4</li>
+									<li class="slide5">5</li>
+									<li class="slide6">6</li>
+									<li class="slide7">7</li>
+									<li class="slide8">8</li>
+									<li class="slide9">9</li>
+									<li class="slide10">10</li>
+									<li class="slide11">11</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="video" class="move">
+						<h1>동영상</h1>
+						<video autoplay muted controls class="vid vid1">
+							<source src="vid/orphan1.mp4" type="video/mp4" />
+						</video>
+						<video autoplay muted controls class="vid vid2">
+							<source src="vid/orphan2.mp4" type="video/mp4" />
+						</video>
+						<ul>
+							<li class="listOne"><h2>예고편</h2></li>
+							<li><span class="one"></span>공식 예고편</li>
+							<li id="time">02:13</li>
+							<hr>
+							<li class="listTwo"><h2>에스더의 그림</h2></li>
+							<li><span class="two"></span>비디오 클립</li>
+							<li id="time">00:31</li>
+						</ul>
+					</div>
+					<div id="view" class="move">
+						<h1>리뷰</h1>
+						<div></div><!--background-->
+						<h3>흡인력 있는 연기, 탄력 있는 긴장감</h3>
+						<p>
+						이 영화에서 공포감을 고조시키는 방식은 전형적이다.<br>
+						하지만 배우들의 흡인력 있는 연기가 인간의 편견과 상처를 건드린다.<br>
+						아역 이사벨 펄먼의 섬뜩한 연기와 베라 파미가의 섬세한 연기가 맞물리며 생기는 탄력 있는 긴장<br>
+						감이 끝까지 마음을 놓지 못하게 한다. 결말의 반전은 그 연기에 힘입은 별책 부록 같은 것이다.
+						</p>
+						<hr>
+						<h3>새로울 것 없는 공포</h3>
+						<p>
+						외부로부터 침입자나 절대악을 설정해 놓고 쫓기게 만드는 할리우드 공포 관습을 그대로 답습하고 있다.<br>
+						이번엔 입양아다.<br>
+						영화의 설정을 떠나 나는 아이에게 망치를 쥐어주고 피가 튀는 장면을 찍게 만드는<br>
+						이 영화의 흥행 전략에 동의할 수 없다.
+						</p>
+					</div>
+					<div id="st" class="move">
+						<h1>스트리밍</h1>
+						<a href="https://play.watcha.net/contents/m5aVVNW" target="_blank" id="whacha"></a>
+						<a href="https://serieson.naver.com/tvstore/detail.nhn?mcode=54704" target="_blank" id="naver"></a>
+						<a href="https://www.youtube.com/watch?v=vXltCEGdZDg" target="_blank" id="youtube"></a>
+						<div id="footer">
+					<h6>logo</h6>
+					<address>TM & ⓒ 2020 Warner Bros. Entertainment Inc. All rights reserved.</address>
+				</div>
+					</div>
+					
+				</div>
+				
 			</div>
-			<ul id="dimg">
-				<li><a href="#"><span>101</span></a><p></p></li>
-				<li><a href="#"><span>102</span></a><p></p></li>
-				<li><a href="#"><span>201</span></a><p></p></li>
-				<li><a href="#"><span>202</span></a><p></p></li>
-				<li><a href="#"><span>301</span></a><p></p></li>
-				<li><a href="#"><span>302</span></a><p></p></li>
-			</ul>
-			<ul id="ho">
-				<li>101</li>
-				<li>102</li>
-				<li>201</li>
-				<li>202</li>
-				<li>301</li>
-				<li>302</li>
-			</ul>
-		</ul>
-		</div>
-		<div id="footer">
-			<a id="logo2" href="#"></a>
-			<ul class="foot">
-			<li>
-				A<br>
-				B<br>
-				O<br>
-				U<br>
-				T<br>
-			</li>
-			<li>
-				<P>상호명 : 더조은 펜션</P>
-				<P>전화번호 : 1644-8282</P>
-				<P>주소 : 충남 태안군</P>
-			</li>
-			
-			<li><a href="#">RESERVATION</a></li>
-			<li><a href="#">SNS</a></li>
-			</ul>
-		</div>
-	</div>
-</body>
+		</body>
+		</html>
+		
